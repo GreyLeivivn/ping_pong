@@ -40,6 +40,7 @@ game_over=False
 
 speed_x=3
 speed_y=3
+font.init()
 font1=font.SysFont('verdana',35)
 
 lose1=font1.render("1 PLAYER LOSE",True,(180,0,0))
@@ -62,11 +63,11 @@ while not game_over:
         
 if ball.rect.x>width:
   finish=true
-  window.blit(lose1,(200,200))
+  mw.blit(lose1,(200,200))
 
 if ball.rect.x>width:
   finish=true
-  window.blit(lose2,(200,200))
+  mw.blit(lose2,(200,200))
 
 racket1.update_r()
 racket2.update_l()
